@@ -23,7 +23,7 @@ import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnviro
 
 @Listeners({ReportPortalTestNGListener.class, TestListener.class})
 public abstract class AbstractTest {
-    WebDriver driver;
+    protected WebDriver driver;
     protected static final Logger LOGGER = Logger.getLogger(AbstractTest.class.getName());
     static DataLoader1 dataloader = new DataLoader1();
     protected static final String UI_URL = dataloader.returnObj().getUiUrl();
